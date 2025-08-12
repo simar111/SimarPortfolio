@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
         image:
           "/Ecom.png",
         technologies: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
-        githubUrl: "https://github.com/harshit14012006/playplatesuserdashboard",
+        githubUrl: "https://github.com/simar111/AplusAcademy",
         liveUrl: "https://playplatesuserdashboard.vercel.app/",
       },
       {
