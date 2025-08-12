@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
         image:
           "https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=800&q=80",
         technologies: ["MongoDB", "Express", "React", "Node.js", "Chart.js"],
-        githubUrl: "https://github.com/SoftechInfowayss/Expensemanager",
+        githubUrl: "https://stexpenseease.netlify.app/",
         liveUrl: "#",
       },
     ],
