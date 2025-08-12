@@ -17,7 +17,16 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = useMemo(
     () => [
-      
+            {
+        title: "Play Plates (E-Commerce Website)",
+        description:
+          "A MERN stack expense tracker website with authentication, budget planning, and insightful charts.",
+        image:
+          "https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=800&q=80",
+        technologies: ["MongoDB", "Express", "React", "Node.js", "Image Kit ","Razorpay"],
+        githubUrl: "https://stexpenseease.netlify.app/",
+        liveUrl: "#",
+      },
       {
         title: "Car Service Website",
         description:
@@ -34,8 +43,8 @@ const Projects: React.FC = () => {
         image:
           "https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=800&q=80",
         technologies: ["MongoDB", "Express", "React", "Node.js", "Chart.js"],
-        githubUrl: "https://stexpenseease.netlify.app/",
-        liveUrl: "#",
+        githubUrl: "https://github.com/SoftechInfowayss/Expensemanager",
+        liveUrl: "https://stexpenseease.netlify.app",
       },
     ],
     []
