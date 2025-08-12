@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
         image:
           "https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=800&q=80",
         technologies: ["MongoDB", "Express", "React", "Node.js", "Image Kit ","Razorpay"],
-        githubUrl: "https://stexpenseease.netlify.app/",
+        githubUrl: "https://github.com/harshit14012006/playplatesuserdashboard",
         liveUrl: "#",
       },
       {
