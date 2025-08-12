@@ -33,7 +33,7 @@ const Projects: React.FC = () => {
           "Aplus Academy: A sleek, responsive React website styled with Tailwind CSS, featuring animations, floating elements, and EmailJS for queries. Includes Homepage, About Us, Courses, and Contact Us for IELTS, PTE, and NATI courses.",
         image:
           "/Ecom.png",
-        technologies: ["MongoDB", "Express", "React", "Node.js", "Image Kit ","Razorpay"],
+        technologies: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
         githubUrl: "https://github.com/harshit14012006/playplatesuserdashboard",
         liveUrl: "https://playplatesuserdashboard.vercel.app/",
       },
