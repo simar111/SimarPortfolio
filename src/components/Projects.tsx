@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
         image: "/car.png",
         technologies: ["MongoDB", "Express", "React", "Node.js"],
         githubUrl: "https://github.com/SoftechInfowayss/carservice",
-        liveUrl: "#",
+        liveUrl: "https://softechhhcarservice.netlify.app/",
       },
       {
         title: "Expense Tracker",
