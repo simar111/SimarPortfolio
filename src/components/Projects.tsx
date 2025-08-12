@@ -17,15 +17,7 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = useMemo(
     () => [
-      {
-        title: "Eye Hospital Management System",
-        description:
-          "A Java-based hospital management system built in NetBeans to manage appointments, patients, and medical records efficiently.",
-        image: "/Eye.png",
-        technologies: ["Java", "NetBeans", "MySQL", "Swing UI"],
-        githubUrl: "https://github.com",
-        liveUrl: "#",
-      },
+      
       {
         title: "Car Service Website",
         description:
