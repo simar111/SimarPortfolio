@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
           "/Ecom.png",
         technologies: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
         githubUrl: "https://github.com/simar111/AplusAcademy",
-        liveUrl: "https://playplatesuserdashboard.vercel.app/",
+        liveUrl: "https://www.aplusacademy.live/",
       },
       {
         title: "Car Service Website",
