@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
           "A full-fledged MERN stack website for booking car services with an advanced admin panel and user dashboard.",
         image: "/car.png",
         technologies: ["MongoDB", "Express", "React", "Node.js"],
-        githubUrl: "https://github.com",
+        githubUrl: "https://github.com/SoftechInfowayss/carservice",
         liveUrl: "#",
       },
       {
