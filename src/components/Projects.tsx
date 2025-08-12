@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
           "https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=800&q=80",
         technologies: ["MongoDB", "Express", "React", "Node.js", "Image Kit ","Razorpay"],
         githubUrl: "https://github.com/harshit14012006/playplatesuserdashboard",
-        liveUrl: "#",
+        liveUrl: "https://playplatesuserdashboard.vercel.app/",
       },
       {
         title: "Car Service Website",
