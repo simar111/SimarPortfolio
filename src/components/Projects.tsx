@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
             {
         title: "Play Plates (E-Commerce Website)",
         description:
-          "A MERN stack expense tracker website with authentication, budget planning, and insightful charts.",
+          "PlayPlates is a full-featured MERN stack e-commerce platform for toys & crockery, featuring a modern responsive UI, secure Razorpay payment integration, and a complete admin dashboard for product, order, and category management. Built with React.js, Node.js, Express, MongoDB, Tailwind CSS, and optimized with ImageKit for fast image delivery, it delivers a smooth, user-friendly shopping experience across all devices.",
         image:
           "https://images.unsplash.com/photo-1554224154-22dec7ec8818?w=800&q=80",
         technologies: ["MongoDB", "Express", "React", "Node.js", "Image Kit ","Razorpay"],
