@@ -7,43 +7,25 @@ const Testimonials = () => {
   const [direction, setDirection] = useState(0);
 
   const testimonials = [
-    {
-      id: 1,
-      name: "Alex Johnson",
-      role: "CEO, TechSolutions Inc.",
-      content:
-        "Working with Simar was an absolute pleasure. Their technical expertise and attention to detail resulted in a web application that exceeded our expectations.",
-      rating: 5,
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-    },
-    {
-      id: 2,
-      name: "Sarah Williams",
-      role: "Product Manager, Digital Innovations",
-      content:
-        "Simar's problem-solving skills are exceptional. They took our complex requirements and turned them into an elegant solution.",
-      rating: 5,
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-    },
-    {
-      id: 3,
-      name: "Michael Chen",
-      role: "CTO, Startup Ventures",
-      content:
-        "We hired Simar for a critical project with tight deadlines. They delivered exceptional quality code and valuable architectural insights.",
-      rating: 4,
-      image: "https://randomuser.me/api/portraits/men/75.jpg",
-    },
-    {
-      id: 4,
-      name: "Emma Rodriguez",
-      role: "Director of Engineering, WebServices Co.",
-      content:
-        "Simar is one of the most talented developers I've worked with. They implement efficient solutions to complex problems.",
-      rating: 5,
-      image: "https://randomuser.me/api/portraits/women/63.jpg",
-    },
-  ];
+  {
+    id: 1,
+    name: "Ayan Arora",
+    role: "Student, New Zealand",
+    content:
+      "Simar completed my assignments and projects with outstanding quality and delivered everything on time. Their work helped me achieve top grades and exceed expectations.",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/men/12.jpg",
+  },
+  {
+    id: 2,
+    name: "Anshul",
+    role: "Founder, A+ Academy",
+    content:
+      "Simar developed our A+ Academy website with exceptional design, functionality, and speed. The end result was beyond what we had envisioned.",
+    rating: 5,
+    image: "https://randomuser.me/api/portraits/men/85.jpg",
+  },
+];
 
   const changeSlide = (newDirection: number) => {
     setDirection(newDirection);
