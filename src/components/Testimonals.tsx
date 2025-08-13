@@ -23,7 +23,7 @@ const Testimonials = () => {
     content:
       "Simar developed our A+ Academy website with exceptional design, functionality, and speed. The end result was beyond what we had envisioned.",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/men/85.jpg",
+    image: "/Anshul.jpg",
   },
 ];
 
