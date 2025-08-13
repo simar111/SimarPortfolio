@@ -14,7 +14,7 @@ const Testimonials = () => {
     content:
       "Simar completed my assignments and projects with outstanding quality and delivered everything on time. Their work helped me achieve top grades and exceed expectations.",
     rating: 5,
-    image: "https://randomuser.me/api/portraits/men/12.jpg",
+    image: "/Ayan.png",
   },
   {
     id: 2,
