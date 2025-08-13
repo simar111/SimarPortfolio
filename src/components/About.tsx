@@ -10,7 +10,7 @@ const About = () => {
       description: 'Freelance Web Developer | Game Development Intern',
       duration: '2022 - Present',
       highlights: [
-        'Built 15+ responsive websites for international clients',
+        'Built 5+ responsive websites for international clients',
         'Developed 3 interactive games using Unity and WebGL',
         'Optimized web performance achieving 95+ Lighthouse scores'
       ],
