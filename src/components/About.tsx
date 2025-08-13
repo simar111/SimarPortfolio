@@ -28,18 +28,7 @@ const About = () => {
       ],
       color: 'from-purple-500 to-purple-600'
     },
-    {
-      icon: Award,
-      title: 'Achievements',
-      description: 'Projects & Recognitions',
-      duration: 'Ongoing',
-      highlights: [
-        'Hackathon 2023 Winner - Best Web Solution',
-        'Open Source Contributor to 5+ projects',
-        'Speaker at DevConf 2024'
-      ],
-      color: 'from-amber-500 to-amber-600'
-    },
+   
   ];
 
   return (
