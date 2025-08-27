@@ -152,7 +152,7 @@ const Hero = () => {
                               transition-all duration-300 rounded-full" />
               
               {/* Button content */}
-              <span className="relative z-10 flex items-center gap-2">
+              <span className="relative z-10 flex items-center gap-2 h-7">
                 Download Resume 
                 <motion.div
                   animate={{ y: [0, -2, 0] }}
