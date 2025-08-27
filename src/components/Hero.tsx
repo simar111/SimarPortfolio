@@ -1,6 +1,6 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, ChevronDown, Download } from "lucide-react";
 
 const roles = ["Web Developer", "Game Developer", "Tech Enthusiast"];
 
@@ -21,6 +21,16 @@ const Hero = () => {
     }, 2500);
     return () => clearInterval(interval);
   }, []);
+
+  // Function to handle resume download
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = './resume.pdf'; // Make sure to place your resume.pdf in the public folder
+    link.download = 'Simar_Narula_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   // Particle background animation
   const particleVariants = {
@@ -75,7 +85,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 leading-tight break-words"
           >
-            Hey, I’m{" "}
+            Hey, I'm{" "}
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Simar
               <br />
@@ -112,12 +122,12 @@ const Hero = () => {
             "Turning ideas into interactive realities, one pixel at a time."
           </motion.p>
 
-          {/* Call to Action */}
+          {/* Call to Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full max-w-md mx-auto lg:mx-0"
+            className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full max-w-lg mx-auto lg:mx-0"
           >
             <a
               href="#contact"
@@ -125,6 +135,13 @@ const Hero = () => {
             >
               Contact Me <ArrowRight size={18} />
             </a>
+            
+            <button
+              onClick={handleDownloadResume}
+              className="w-48 sm:w-52 px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 rounded-full text-white font-semibold flex items-center justify-center gap-2 hover:scale-105 hover:shadow-xl transition-all duration-300 border border-gray-600"
+            >
+              Download Resume <Download size={18} />
+            </button>
           </motion.div>
 
           {/* Social Icons */}
