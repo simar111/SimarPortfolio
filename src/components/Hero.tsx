@@ -25,7 +25,7 @@ const Hero = () => {
   // Function to handle resume download
   const handleDownloadResume = () => {
     const link = document.createElement('a');
-    link.href = './resume.pdf'; // Make sure to place your resume.pdf in the public folder
+    link.href = './resume.pdf';
     link.download = 'Simar_Narula_Resume.pdf';
     document.body.appendChild(link);
     link.click();
@@ -136,12 +136,38 @@ const Hero = () => {
               Contact Me <ArrowRight size={18} />
             </a>
             
-            <button
+            <motion.button
               onClick={handleDownloadResume}
-              className="w-48 sm:w-52 px-6 py-3 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-600 hover:to-gray-700 rounded-full text-white font-semibold flex items-center justify-center gap-2 hover:scale-105 hover:shadow-xl transition-all duration-300 border border-gray-600"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.98 }}
+              className="w-48 sm:w-52 px-6 py-3 relative overflow-hidden rounded-full text-white font-semibold flex items-center justify-center gap-2 transition-all duration-300 group
+                         bg-gradient-to-r from-indigo-500/20 to-purple-500/20 
+                         hover:from-indigo-500/30 hover:to-purple-500/30 
+                         border border-indigo-400/50 hover:border-indigo-400/80
+                         backdrop-blur-sm hover:shadow-lg hover:shadow-indigo-500/25"
             >
-              Download Resume <Download size={18} />
-            </button>
+              {/* Animated background effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400/0 via-purple-500/0 to-pink-500/0 
+                              group-hover:from-blue-400/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 
+                              transition-all duration-300 rounded-full" />
+              
+              {/* Button content */}
+              <span className="relative z-10 flex items-center gap-2">
+                Download Resume 
+                <motion.div
+                  animate={{ y: [0, -2, 0] }}
+                  transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+                >
+                  <Download size={18} />
+                </motion.div>
+              </span>
+              
+              {/* Subtle shine effect */}
+              <div className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                              bg-gradient-to-r from-transparent via-white/5 to-transparent 
+                              transform translate-x-[-100%] group-hover:translate-x-[100%] 
+                              transition-transform duration-1000" />
+            </motion.button>
           </motion.div>
 
           {/* Social Icons */}
