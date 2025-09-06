@@ -8,8 +8,8 @@ type Project = {
   description: string;
   image: string;
   technologies: string[];
-  githubUrl: string;
-  liveUrl: string;
+  githubUrl?: string; // made optional
+  liveUrl?: string;   // made optional
 };
 
 const Projects: React.FC = () => {
