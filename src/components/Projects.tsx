@@ -31,7 +31,7 @@ const Projects: React.FC = () => {
   title: "Laboratory Management Desktop Application",
   description:
     "A complete desktop solution for chemical laboratories, developed using React.js, Electron.js, Node.js, and Tailwind CSS. It features party & ledger management, voucher tracking, automated test report generation (Moisture, Oil, FFA, etc.), and secure PDF creation with duplicate printing support. The system was packaged into a Windows installer (.exe) for seamless deployment, enabling lab staff to use it like professional software while significantly reducing manual effort and improving operational efficiency.",
-  image: "/labapp.png",
+  image: "/Lab.jpg",
   technologies: ["React.js", "Electron.js", "Node.js", "Tailwind CSS"],
   // githubUrl: "https://github.com/yourusername/laboratory-management",
   // liveUrl: "",
