@@ -191,27 +191,31 @@ const Projects: React.FC = () => {
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-4">
-                    <motion.a
-                      href={selectedProject.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="p-3 bg-gray-700/40 rounded-full hover:bg-blue-500 transition-all"
-                    >
-                      <Github size={22} />
-                    </motion.a>
-                    <motion.a
-                      href={selectedProject.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="p-3 bg-gray-700/40 rounded-full hover:bg-purple-500 transition-all"
-                    >
-                      <ExternalLink size={22} />
-                    </motion.a>
+                 <div className="flex gap-4">
+                    {selectedProject.githubUrl && (
+                      <motion.a
+                        href={selectedProject.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="p-3 bg-gray-700/40 rounded-full hover:bg-blue-500 transition-all"
+                      >
+                        <Github size={22} />
+                      </motion.a>
+                    )}
+                    {selectedProject.liveUrl && (
+                      <motion.a
+                        href={selectedProject.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="p-3 bg-gray-700/40 rounded-full hover:bg-purple-500 transition-all"
+                      >
+                        <ExternalLink size={22} />
+                      </motion.a>
+                    )}
                   </div>
                 </div>
               </motion.div>
